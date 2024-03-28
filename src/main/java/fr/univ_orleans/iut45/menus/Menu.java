@@ -32,4 +32,47 @@ class Menu {
             return false;
         return true;
     }
+
+// Question 8 Prix de revient min et max
+
+    public double prixRevientMin(){
+        double prixentree = 999999.0;
+        double prixplat = 999999.0;
+        double prixdessert = 999999.0;
+        if (entrees.size()==0) prixentree = 0;
+        else for(Plat entreeL : entrees){
+            if (entreeL.prix_de_revient < prixentree)
+                prixentree = entreeL.prix_de_revient;
+        }
+        if (plats_principaux.size()==0) prixplat = 0;
+        else for(Plat platL : plats_principaux){
+            if (platL.prix_de_revient < prixentree)
+                prixentree = platL.prix_de_revient;
+        }
+        if (desserts.size()==0) prixdessert = 0;
+        else for(Plat dessertL : desserts){
+            if (dessertL.prix_de_revient < prixentree)
+                prixentree = dessertL.prix_de_revient;
+        }
+        return prixdessert+prixplat+prixentree;
+    }
+
+    public double prixRevientMax(){
+        double prixentree = 0.0;
+        double prixplat = 0.0;
+        double prixdessert = 0.0;
+        for(Plat entreeL : entrees){
+            if (entreeL.prix_de_revient > prixentree)
+                prixentree = entreeL.prix_de_revient;
+        }
+        for(Plat platL : plats_principaux){
+            if (platL.prix_de_revient > prixentree)
+                prixentree = platL.prix_de_revient;
+        }
+        for(Plat dessertL : desserts){
+            if (dessertL.prix_de_revient > prixentree)
+                prixentree = dessertL.prix_de_revient;
+        }
+        return prixdessert+prixplat+prixentree;
+    }
 }
