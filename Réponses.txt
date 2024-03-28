@@ -1,0 +1,24 @@
+Question 1 :
+Il y a 3 branches de base (2 + le master)
+La branche courante est le master
+
+
+Question 2 :
+Joaquin "joe" Lapin à fait le premier dépot le 24 Mars 2024
+Bill Canard à instauré les premiers tests de la classe plat le 26 Mars 2024
+
+
+Question 3 :
+Le dernier commit à la branche pom_xml est le changement de version de java le 26 Mars 2024
+Le dernier commit à la branche Json est l'implémentation de menu.from.json le 26 Mars 2024
+Le dernier commit à la branche master est l'ajout d'un test pour menu.estcomplet le 26 Mars 2024
+
+Question 4 :
+Il y a plusieurs ajouts qui ont été fait mais pas commit, tel que l'ajout de demain_midi.json ainsi que l'ajout de propriétés sur des fichiers xml
+Il est donc pertinent de commit tout ça
+
+Question 5 :
+création du gitignore et ajout de target/
+
+Question 6 :
+la methode estComplet n'est pas définie dans menu ce qui génère deux erreurs
